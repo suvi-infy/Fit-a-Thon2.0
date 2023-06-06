@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit-a-thon | Registration</title>
+    <link rel="icon" type="image/x-icon" href="/images/faviocon.ico">
+    <link rel="stylesheet" href="/css/userName.css" />
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <title>Document</title>
+</head>
+<body>
+    <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <a href="index.html" class="pull-left visible-md visible-lg">
+              <div id="logo-img" alt="Logo image"></div>
+            </a>
+          </div>
+        </div>
+      </nav> <!-- End of navbar header || Logo -->
+    </header>
+
+    <div class="row">
+        <form action="registration.html">
+            <h2>Registration</h2>
+            <div class="form-group">
+
+                <input type="text" id="teamName" name="tname" required/>
+                <label for="tname"><b>Enter Your Teamname</b></label>
+
+                <input type="text" id = "uname" name =  "uname" required/>
+                <label for="uname"><b>Enter Username</b></label>
+        
+                <br>
+                <input id="password" name="password" type="password" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 8 characters \n One uppercase, one lowercase, one numerals and one special character(@,$,!,%,*,#,!,& etc.)' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;" required aria-invalid="true">
+                <label for="pwd"><b>Enter Password</b></label>
+
+                <input id="password_two" name="password_two" type="password" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Please enter the same Password as above' : '');" required aria-invalid="true">
+                <label for="pwd"><b>Confirm Password</b></label>
+
+                <button type = "submit" class="nextBtn" onclick="return validate();"><strong>Next</strong></button>       
+              </div>
+
+              <div class="container">
+                <!-- <buttontype="reset" class="cnclBtn">Reset</button> -->
+                 <span class = "register">Already have an account? <a href="index.html">Log In</a></span>     
+            </div> 
+        </form>
+    </div>
+</body>
+</html>
