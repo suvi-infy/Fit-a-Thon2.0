@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: all 500ms ease;
+}
+  
+body{
+   background-image: url("/images/bg.png");
+   background-repeat: no-repeat;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+form{
+    border: 1px solid #f1f1f1;
+    margin: 0 auto; 
+    width: 400px;
+    background-color: rgba(142, 179, 211, 0.4);
+}
+
+h2{
+    margin: 0 auto; 
+    padding: 12px 20px;
+    text-align: center;
+}
+
+/*input[type = text], input[type = password]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+}*/
+
+
+button{
+    background-color: #2a52be;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.imgContainer{
+    text-align: center;
+    
+}
+
+img.avatar{
+    width: 30%;
+    border-radius: 50%;
+}
+
+.form-group{
+    padding: 10px;
+}
+
+.form-group input[type = text], input[type = password]{
+    background-color: inherit;
+    border: none;
+    border-bottom: 1.5px solid #555;
+    display: block;
+    padding: 0.5em 0;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    color: #eee;
+    font-weight: 500;
+    border-radius: 8px;
+    
+}
+
+.container{
+    padding: 16px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.loginBtn{
+    margin-top: 30px;
+    background-color: #2a52be;
+    border-radius: 8px;
+}
+
+#frgtPwd{
+    float: right;
+}
+
+.register>a{
+    text-align: center;
+}
+
+a{
+    color: inherit;
+}
+
+/*.cnclBtn{
+    width: auto;
+    padding: 10px 8px;
+    background-color: #f44336;
+}*/
+
+#header-nav {    
+    border-radius: 0;
+    border: 0;
+}
+
+#logo-img {
+    background: url('/images/logo.PNG') no-repeat;
+    width: 250px;
+    height: 100px;
+}
+
+.navbar-header {    
+    margin-bottom: -30px;
+    margin-left: -30px;
+    margin-top: -20px;
+  }
+  
+
+@media screen and (max-width: 480px){
+    span.register{
+        display: block;
+        float: none;
+    }
+
+    .cnclBtn{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .row {
+      padding-left: 1em;
+      padding-right: 1em; }
+      .row h2 {
+        font-size: 1.5em !important; } 
+}
+
+

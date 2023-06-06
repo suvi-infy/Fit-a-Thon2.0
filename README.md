@@ -1,2 +1,3 @@
-# Fit-a-Thon2.0
-Automating Fit-a-Thon 2.0
+# Fit-a-Thon
+Automating Fit-a-Thon. 
+By Subhradeep Maji, Pranay Gosavi, Gauri Yadav & Hanamant Chandchan. 
