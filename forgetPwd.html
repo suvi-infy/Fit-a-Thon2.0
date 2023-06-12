@@ -1,31 +1,67 @@
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/forgetPwdStyle.css" />
-	<title>Fit-a-thon | Forgot Password</title>
-	<link rel="icon" type="image/x-icon" href="/images/faviocon.ico">
-</head>
-<body>
-    <nav id="header-nav" class="navbar navbar-default">
-        <div class="container">
-          <div class="navbar-header">
-            <a href="index.html" class="pull-left visible-md visible-lg">
-              <div id="logo-img" alt="Logo image"></div>
-            </a>
-          </div>
-        </div><!--.collapse .navbar-collapse -->
-      </nav>
-    </header>
-	<div class="row">
-		<h2>Reset Password</h2>
-		<div class="form-group">
-			<input type="text" name="uname" id="user_name">
-			<p><label for="uname">Enter Username</label></p>
-			<button>Reset Password</button>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/forgetPwdStyle.css" />
+		<title>Fit-a-thon | Forgot Password</title>
+		<link rel="icon" type="image/x-icon" href="/images/faviocon.ico">
+		<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+
+		<header>
+			<div class="navbar-header">
+			  <a href="index.html">
+				<div id="logo-img" alt="Logo image"></div>
+			  </a>
+			</div>
+			<nav class="navigation">
+			  <a href="about.html">About</a>
+			  <a href="contactUs.html">Contact Us</a>
+			  <button class="btnLogin-popup">Login</button>
+			<!--  <button class="btnRegister-popup">Register</button> -->
+			</nav> <!-- End of navbar header || Logo -->
+	  	</header>
+		<div class="wrapper">
+			<div class="form-box resetPwd">
+				<h2>Reset Password</h2>
+				<form action="index.html" onsubmit="">
+					<div class="form-group">
+						<span class="icon">
+							<ion-icon name="person"></ion-icon>
+						  </span>
+						  <input type="text" id = "uname" name = "uname" required/>            
+						  <label for="uname"><b>Enter Username</b></label>
+					</div>
+
+					<div class="form-group">
+						<span class="icon">
+						  <ion-icon name="lock-closed"></ion-icon>
+						</span>
+						<input type="password" id="pass1" name =  "pass1" pattern = "^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" 
+						onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 8 characters \n One uppercase, one lowercase, one numerals and one special character(@,$,!,%,*,#,!,& etc.)' : '')" 
+						required/>            
+						<label for = 'pass1'><b>Enter New Password</b></label>
+					</div>
+	
+					<div class = "form-group">
+						<span class="icon">
+						  <ion-icon name="lock-closed"></ion-icon>
+						</span>
+						<input type="password" id="pass2" name ="pass2" pattern = "^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" 
+						oninvalid="setCustomValidity('Password must be same as above.')" 
+						required/>            
+						<label for="pass2"><b>Confirm New Password</b></label>
+					  </div>
+	
+					<button type = "submit" class="submitBtn" onclick="return validateSubmit();"><strong>Submit</strong></button>
+				</form>
+			</div>
 		</div>
-		<div class="footer">
-			<h5>New here? <a href="userName.html">Register</a></h5>
-			<h5>Already have an account? <a href="index.html">Log In</a></h5>
-		</div>
-	</div>
-</body>
+		<script src="/js/script.js"></script>
+		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	</body>
+</html>

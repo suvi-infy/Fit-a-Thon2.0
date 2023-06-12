@@ -8,11 +8,87 @@
   
   body {
     background-image: url("/images/bg.png");
-    /* background-repeat: no-repeat;
-    background-position-y: 800px; */
+   background-repeat: no-repeat;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background-size: cover;
+   background-position: center;
   }
+
+  header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    z-index: 99;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo-img {
+  background: url('/images/logo.PNG') no-repeat;
+  width: 250px;
+  height: 100px;
+  overflow: hidden;
+  user-select: none;
+}
+
+.navigation{
+  padding-bottom: 50px;
+}
+
+.navigation a{
+  position: relative;
+  font-size: 1.1em;
+  color: antiquewhite;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 30px;
+}
+
+.navigation a::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 3px;
+  background: antiquewhite;
+  border-radius: 5px;
+  transform: scale(0);
+  transition: transform .5s;
+}
+
+.navigation a:hover::after{
+  transform: scale(1);
+}
+
+.navigation button{
+  background: transparent;
+  width: 120px;
+  height: 30px;
+  border: 2px solid #eee;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: antiquewhite;
+  font-weight: 500;
+  margin-left: 40px;
+  margin-right: 100px;
+  transition: 0.5s;
   
-  #header-nav {
+}
+
+.navigation button:hover{
+  background-color: #162938;
+  color: antiquewhite;
+}
+  
+/*  #header-nav {
     border-radius: 0;
     border: 0;
   }
@@ -25,7 +101,77 @@
   .navbar-header {
     margin-bottom: -30px;
     margin-left: -10px;
-  }
+  }*/
+
+  .wrapper{
+    border: 1px solid #f1f1f1;
+    border-radius: 20px;
+    margin: 0 auto; 
+    width: 500px;
+    height: 480px;
+    margin-top: 80px;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: transform .2s ease, height .2s ease;
+}
+
+.wrapper .member-box{
+  width: 100%;
+  padding: 40px;
+}
+
+.member-box h2{ 
+  color: #162938;
+  text-align: center;
+}
+
+.form-group{
+  position: relative;
+  width: 100%;
+  height: 10px; 
+  margin: 30px 0;
+}
+
+.form-group label{
+  color: antiquewhite;
+  font-weight: 500;
+  pointer-events: none;
+  transition: .5s;
+  padding-right: 10px;
+}
+
+.form-group input{
+  background: transparent;
+  border: none;
+  outline: none;
+  color: antiquewhite;
+  border-bottom: 1.5px solid #555;
+}
+
+.form-group .captain{
+  position: absolute;
+  top: 18px;
+  left: 4px;
+  font-size: 0.8em;
+  color: #A30000;
+}
+
+.registerBtn{
+  margin-top: 30px;
+  border-radius: 8px;
+  background-color: #162938;
+  color: white;
+  padding: 10px 16px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
   
   .wrapper-Registration {
     background-color: rgba(142, 179, 211, 0.4);

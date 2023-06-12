@@ -3,98 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/registration.css" />
+    <link rel="stylesheet" href="/css/registration.css" />
     <title>Fit-a-thon | Registration</title>
     <link rel="icon" type="image/x-icon" href="/images/faviocon.ico">
   </head>
   <body>
-    <nav id="header-nav" class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <a href="index.html" class="pull-left visible-md visible-lg">
-            <div id="logo-img" alt="Logo image"></div>
-          </a>
-        </div>
+    <header>
+      <div class="navbar-header">
+        <a href="index.html">
+          <div id="logo-img" alt="Logo image"></div>
+        </a>
       </div>
-    </nav>
-    <div class="wrapper-Registration">
-      <h2>Enter Member Details</h2>
-      <form action="">
-        <div class="input-group1">
-          <!-- <div>
-            <label for="">Team Name</label>,
-            <input type="text" placeholder=" Enter Team Name" />
-          </div>
-          <br /> -->
-          <p
+      <nav class="navigation">
+        <a href="#">About</a>
+        <a href="#">Contact Us</a>
+        <button class="btnLogin-popup">Login</button>
+      <!--  <button class="btnRegister-popup">Register</button> -->
+      </nav> <!-- End of navbar header || Logo -->
+    </header>
+
+    <div class="wrapper">
+      <div class="member-box">
+        <h2>Enter Member Details</h2>
+        <p
             style="
-              color: rgb(252, 251, 251);
-              font-size: large;
+              text-align: center  ;
+              color: #A30000;
+              font-size: small;
               margin-block: 2px;
-              font-weight: 800;
+              font-weight: 200;
             "
           >
-            Team Member name should be in: (Surname_Name )format
-          </p>
-          <br />
-          <div>
-            <label for="">Team Member 1</label>
-            <input type="text" placeholder="Enter Name" required/>
+            **Team Member name should be in: (Surname_Name) format
+        </p>
+        <form action="index.html">
+          <div class="form-group">
+            <label for="">Team Member 1*</label>
+            <span class="captain">
+              (Captain)
+            </span>
+            <input type="text" id= "member1" name = "member1" placeholder="Enter Name" required/>
+            <input type="number" placeholder="Emp id" pattern="([0-9]{5,})" required/>
+          </div>
+
+          <div class="form-group">
+            <label for="">Team Member 2*</label>
+            <input type="text" id= "member2" name = "member2" placeholder="Enter Name" required/>
             <input type="number" placeholder="Emp id" pattern="(\d{5,})" required/>
-            <label for=""></label>
           </div>
-          <br />
-          <div>
-            <label for="">Team Member 2</label>
-            <input type="text" placeholder="Enter Name" required/>
-            <input type="number" placeholder="Emp id" required/>
-            <label for=""></label>
+
+          <div class="form-group">
+            <label for="">Team Member 3*</label>
+            <input type="text" id= "member3" name = "member3" placeholder="Enter Name" required/>
+            <input type="number" placeholder="Emp id" pattern="(\d{5,})" required/>
           </div>
-          <br />
-          <div>
-            <label for="">Team Member 3</label>
-            <input type="text" placeholder="Enter Name" required/>
-            <input type="number" placeholder="Emp id" required/>
-            <label for=""></label>
+
+          <div class="form-group">
+            <label for="">Team Member 4*</label>
+            <input type="text" id= "member4" name = "member4" placeholder="Enter Name" required/>
+            <input type="number" placeholder="Emp id" pattern="(\d{5,})" required/>
           </div>
-          <br />
-          <div>
-            <label for="">Team Member 4</label>
-            <input type="text" placeholder="Enter Name" />
-            <input type="number" placeholder="Emp id" />
-            <label for=""></label>
+
+          <div class="form-group">
+            <label for="">Team Member 5*</label>
+            <input type="text" id= "member5" name = "member5" placeholder="Enter Name" required/>
+            <input type="number" placeholder="Emp id" pattern="(\d{5,})" required/>
           </div>
-          <br />
-          <div>
-            <label for="">Team Member 5</label>
-            <input type="text" placeholder="Enter Name" />
-            <input type="number" placeholder="Emp id" />
-            <label for=""></label>
+
+          <div class="form-group">
+            <label for="">Team Member 6*</label>
+            <input type="text" id= "member6" name = "member6" placeholder="Enter Name" required/>
+            <input type="number" id ="memberid6" placeholder="Emp id" pattern="(\d{5,})" required/>
           </div>
-          <br />
-          <div>
-            <label for="">Team Member 6</label>
-            <input type="text" placeholder="Enter Name" />
-            <input type="number" placeholder="Emp id" />
-            <label for=""></label>
-          </div>
-          <br />
-          <!--<div>
-            <label for="">Username</label>
-            <input type="text" placeholder="Username" required />
-          </div>
-          <br />
-          <div>
-            <label for="">Password</label>
-            <input type="password" placeholder="password" required />
-            <label for="">Confirm Password</label>
-            <input type="password" placeholder="Confirm password" required />
-          </div> -->
-  
-          <button type="submit" class="btn-regi">Register</button>
-        </div>
-      </form>
+          <br>
+          <button type = "submit" class="registerBtn" onclick="return validateRegister();"><strong>Register</strong></button>
+        
+        </form>
+      </div>
+      
     </div>
-    <script src="script1.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

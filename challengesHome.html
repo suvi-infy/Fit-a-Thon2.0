@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenges</title>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/x-icon" href="/images/faviocon.ico">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            transition: all 500ms ease;
+        }
+
+      body{
+        background-image: url("/images/bg.png");
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-size: cover;
+        background-position: center;
+        }
+        
+        header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        z-index: 99;
+        align-items: center;
+        justify-content: space-between;
+        }
+
+        #logo-img {
+        background: url('/images/logo.PNG') no-repeat;
+        width: 250px;
+        height: 100px;
+        overflow: hidden;
+        user-select: none;
+        }
+
+
+      .heading {
+        text-align: center;
+        margin: 0 auto;
+        position: absolute;
+        margin-top: -450px;
+        color: antiquewhite;
+        font-size: 2em;
+        font-weight: 600;        
+        justify-content: center;
+        align-items: center;
+        text-decoration: underline;
+        
+      }
+
+      .btn {
+        text-align: center;
+        color: white;
+        margin: 0 auto;
+        width: 600px;
+        height: 520px;        
+        margin-top: 150px;
+        font-weight: 500;
+        border: none;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;            
+        font-size: large;
+      }
+      .clk:hover {
+        opacity: 0.8;
+      }
+      .clk {
+        text-align: center;
+        border-radius: 20px;
+        width: 130px;
+        padding: 20px;
+        margin: 5px;
+        background-color: antiquewhite;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+        <div class="navbar-header">
+          <a href="challengesHome.html">
+            <div id="logo-img" alt="Logo image"></div>
+          </a>
+        </div>
+    </header>
+    <span class="heading"><p>CHALLENGES</p> </span>
+    <div class="btn">
+      <button type="submit" class="clk" onclick="redirect1()">
+        Challenge 1 : Step-a-thon <i class='bx bx-walk'></i>
+      </button>
+      &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+
+      <button type="submit" class="clk" onclick="redirect2()">
+        Challenge 2
+      </button>
+
+      <br />
+
+      <button type="submit" class="clk">Challenge 3</button>
+      &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+      <button type="submit" class="clk">Challenge 4</button>
+
+      <br />
+
+      <button type="submit" class="clk">Challenge 5</button>
+      &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+      <button type="submit" class="clk">Challenge 6</button>
+
+      <br />
+
+      <button type="submit" class="clk">Challenge 7</button>
+      &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+      <button type="submit" class="clk">Challenge 8</button>
+
+      <br />
+
+      <button type="submit" class="clk">Challenge 9</button>
+      &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+      <button type="submit" class="clk">Challenge 10</button>
+    </div>
+    <script>
+      function redirect1() {
+        window.location = "evaluation.html";
+        //Change the target file name here
+      }
+      function redirect2() {
+        window.location = ""; //put file name here
+      }
+    </script>
+    
+  </body>
+</html>

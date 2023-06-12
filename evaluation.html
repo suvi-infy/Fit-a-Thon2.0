@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/forgetPwdStyle.css" />
+    <title>Evaluation</title>
+    <style>
+      ::placeholder{
+        color: antiquewhite;
+        align-items: center;
+        opacity: 0.7;
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar-header">
+          <a href="challengesHome.html">
+            <div id="logo-img" alt="Logo image"></div>
+          </a>
+        </div>
+    </header>
+
+    <div class="wrapper-evaluation">
+        <div class="form-box evaluation">            
+            <form action="">
+                <div class="videoContainer">
+                    <p>Reference Video: &nbsp; <a href="https://www.youtube.com/embed/N9C88z3g0Es" target="_blank">Click here to watch the video.</a></p>
+                </div>
+
+                <div class="form-group">
+                    <table>
+                        <tr>
+                          <th>Sr. No.</th>
+                          <th>Team Members</th>
+                          <th>Complexity</th>
+                          <th>Weightage</th>
+                          <th>Count</th>
+                          <th>Total Score</th>
+                          <th>Upload Video/Image</th>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td><input type="text" placeholder="Enter Name" /></td>
+                          <td><select name="complexity" class="complexity">
+                            <option value="High">High</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Low">Low</option>
+                          </select></td>
+                          <td><input type="number" placeholder="Weightage" /></td>
+                          <td><input type="number" placeholder="Count" /></td>
+                          <td><input type="number" placeholder="Total Score" /></td>
+                          <td><input type="file" name="" id="" class= "fileUpload" accept="video/*, image/*"></td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td><input type="text" placeholder="Enter Name" /></td>
+                          <td><select name="complexity" class="complexity">
+                            <option value="High">High</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Low">Low</option>
+                          </select></td>
+                          <td><input type="number" placeholder="Weightage" /></td>
+                          <td><input type="number" placeholder="Count" /></td>
+                          <td><input type="number" placeholder="Total Score" /></td>
+                          <td><input type="file" name="" id="" class= "fileUpload" accept="video/*, image/*"></td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td><input type="text" placeholder="Enter Name" /></td>
+                          <td><select name="complexity" class="complexity">
+                            <option value="High">High</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Low">Low</option>
+                          </select></td>
+                          <td><input type="number" placeholder="Weightage" /></td>
+                          <td><input type="number" placeholder="Count" /></td>
+                          <td><input type="number" placeholder="Total Score" /></td>
+                          <td><input type="file" name="" id="" class= "fileUpload" accept="video/*, image/*"></td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td><input type="text" placeholder="Enter Name" /></td>
+                          <td><select name="complexity" class="complexity">
+                            <option value="High">High</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Low">Low</option>
+                          </select></td>
+                          <td><input type="number" placeholder="Weightage" /></td>
+                          <td><input type="number" placeholder="Count" /></td>
+                          <td><input type="number" placeholder="Total Score" /></td>
+                          <td><input type="file" name="" id="" class= "fileUpload" accept="video/*, image/*"></td>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td><input type="text" placeholder="Enter Name" /></td>
+                          <td><select name="complexity" class="complexity">
+                            <option value="High">High</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Low">Low</option>
+                          </select></td>
+                          <td><input type="number" placeholder="Weightage" id="weightage"/></td>
+                          <td><input type="number" placeholder="Count" id="count"/></td>
+                          <td><input type="number" placeholder="Total Score" /></td>
+                          <td><input type="file" name="" id="" class= "fileUpload" accept="video/*, image/*"></td>
+                        </tr>
+                        <tr>
+                          <td>6</td>
+                          <td><input type="text" placeholder="Enter Name" /></td>
+                          <td><select name="complexity" class="complexity">
+                            <option value="High">High</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Low">Low</option>
+                          </select></td>
+                          <td><input type="number" placeholder="Weightage" /></td>
+                          <td><input type="number" placeholder="Count" /></td>
+                          <td><input type="number" placeholder="Total Score" /></td>
+                          <td><input type="file" name="" id="" class= "fileUpload" accept="video/*, image/*"></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td><th>Total Score</th></td>
+                          <td><input type="number" placeholder="Total" /> </td>
+                          <td></td>
+                        </tr>
+                      </table>
+                </div>
+                <div class="btn-group">
+                  <button id="btn1" onclick="return validSubmit();">Submit</button>
+                  <button onclick="redirect()">Back</button>
+                  <button>Scoreboard</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--<script src="">
+      function redirect(){
+        window.location="challengesHome.html";
+        
+      }
+
+      const save=document.getElementById('btn1')
+      save.addEventListener('click',function(){
+        alert('saved succesfully')
+      })
+
+    </script>-->
+    <script src="/js/script.js"></script>
+</body>
+</html>
